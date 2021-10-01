@@ -58,4 +58,4 @@ Configuration
 }
 ```
 
-> 참조 링크: https://nomadcoders.co/typescript-for-beginners/lobby<br />
+> 참조 링크: https://nomadcoders.co/typescript-for-beginners<br />
