@@ -1,34 +1,31 @@
-/* 
-Javascript
+class Block {
+  public index: number;
+  public hash: string;
+  public previousHash: string;
+  public data: string;
+  public timestamp: number;
 
-const name = "Alex",
-  age = 24,
-  gender = "male";
-
-const sayHi = (name, age, gender) => {
-  console.log(`Hello ${name}, you are ${age}, gender{gender}`);
-};
-
-sayHi(name, age, gender);
-sayHi(name, age); // typescript에서는 애러가 발생한다.
-*/
-
-interface Human {
-  name: string;
-  age: number;
-  gender: string;
+  constructor(
+    index: number,
+    hash: string,
+    previousHash: string,
+    data: string,
+    timestamp: number
+  ) {
+    this.index = index;
+    this.hash = hash;
+    this.previousHash = previousHash;
+    this.data = data;
+    this.timestamp = timestamp;
+  }
 }
 
-const person = {
-  name: "Alex",
-  age: 20,
-  gender: "male"
-}
+const genesisBlock: Block = new Block(0, "12030123010", "", "hello", 123456);
 
-const sayHi = (person: Human): string => {
-  return `Hello ${person.name}, you are ${person.age}, you are ${person.gender}!`;
-};
+let blockchain: [Block] = [genesisBlock];
 
-console.log(sayHi(person));
+// blockchain.push("");
+
+console.log(blockchain);
 
 export {};
