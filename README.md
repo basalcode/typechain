@@ -1,5 +1,36 @@
-tsconfig.json
+사용 방법
+===
+다운로드 및 패키지 설치
 ---
+* ### 다운로드
+
+```PowerShell
+git clone https://github.com/basalcode/typechain.git
+```
+* ### 패키지 설치
+```PowerShell
+npm install
+
+또는
+
+yarn
+```
+시작하기
+---
+```PowerShell
+npm run start
+
+또는
+
+yarn start
+```
+terminal을 확인해서 다음과 같은 결과가 나왔다면 성공!
+
+<img src="./executionResult.png" alt="실행 결과" /><br />
+
+Configuration
+---
+* ### tsconfig.json
 ```JSON
 {
     "compilerOptions": {
@@ -12,8 +43,7 @@ tsconfig.json
     "exclude": ["node_modules"] // 컴파일 하지 않도록 제외
 }
 ```
-package.json
----
+* ### package.json
 ```JSON
 {
   "name": "typechain",
@@ -27,3 +57,5 @@ package.json
   } 
 }
 ```
+
+> 참조 링크: https://nomadcoders.co/typescript-for-beginners/lobby<br />
